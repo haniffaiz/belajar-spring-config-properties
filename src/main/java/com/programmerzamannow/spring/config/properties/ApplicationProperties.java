@@ -15,4 +15,20 @@ public class ApplicationProperties {
 
     private boolean productionMode;
 
+    private DatabaseProperties database;
+
+    @Getter
+    @Setter
+    public static class DatabaseProperties{
+
+        private String username;
+
+        private String password;
+
+        private String database;
+
+        private String url;
+
+    }
+
 }
